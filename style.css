@@ -1,0 +1,424 @@
+/* ------------------------------
+   BASIC SETTINGS
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2d332d;
+    background: #f7f4ee;
+    line-height: 1.7;
+}
+
+
+/* ------------------------------
+   NAVIGATION
+------------------------------ */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 7%;
+
+    background: rgba(247, 244, 238, 0.96);
+
+    z-index: 1000;
+}
+
+.nav-names {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #2d332d;
+    text-decoration: none;
+    font-size: 13px;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.rsvp-nav {
+    border-bottom: 1px solid #2d332d;
+}
+
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(24, 35, 27, .30),
+            rgba(24, 35, 27, .45)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.small-heading {
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-weight: normal;
+    font-size: clamp(60px, 10vw, 125px);
+
+    line-height: .9;
+}
+
+.hero h1 span {
+    display: block;
+
+    font-style: italic;
+    font-size: .65em;
+
+    margin: 10px 0;
+}
+
+.wedding-date {
+    margin-top: 35px;
+
+    font-size: 17px;
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+.wedding-location {
+    margin: 7px 0 30px;
+
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+/* ------------------------------
+   BUTTONS
+------------------------------ */
+
+.button {
+    display: inline-block;
+
+    padding: 13px 30px;
+
+    background: #39483c;
+    color: white;
+
+    border: none;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* ------------------------------
+   GENERAL SECTIONS
+------------------------------ */
+
+.section {
+    padding: 110px 10%;
+    text-align: center;
+}
+
+.alternate {
+    background: #eae5dc;
+}
+
+.section-small-title {
+    font-size: 11px;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-weight: normal;
+
+    font-size: clamp(38px, 5vw, 60px);
+
+    margin-bottom: 30px;
+}
+
+.welcome p {
+    max-width: 700px;
+
+    margin: 15px auto;
+}
+
+.center-text {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* ------------------------------
+   OUR STORY
+------------------------------ */
+
+.story-container {
+    max-width: 1000px;
+
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    text-align: left;
+}
+
+.photo-placeholder {
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #d6d0c4;
+
+    color: #69665f;
+}
+
+.story-text h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    margin-bottom: 20px;
+}
+
+
+/* ------------------------------
+   WEDDING DETAILS
+------------------------------ */
+
+.details-grid {
+    max-width: 900px;
+
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.detail-card {
+    padding: 55px 30px;
+
+    border: 1px solid #b9b3a8;
+}
+
+.detail-card h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.detail-time {
+    font-size: 19px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ------------------------------
+   SCHEDULE
+------------------------------ */
+
+.schedule {
+    max-width: 650px;
+
+    margin: 40px auto 0;
+}
+
+.schedule-item {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid #c5bfb3;
+
+    text-align: left;
+}
+
+.schedule-item span {
+    font-weight: bold;
+}
+
+
+/* ------------------------------
+   FAQ
+------------------------------ */
+
+.faq {
+    max-width: 750px;
+
+    margin: 40px auto 0;
+
+    text-align: left;
+}
+
+.faq-item {
+    padding: 25px 0;
+
+    border-bottom: 1px solid #c5bfb3;
+}
+
+.faq-item h3 {
+    font-family: Georgia, serif;
+
+    margin-bottom: 8px;
+}
+
+
+/* ------------------------------
+   RSVP
+------------------------------ */
+
+.rsvp-section {
+    background: #39483c;
+
+    color: white;
+}
+
+.rsvp-section .button {
+    margin-top: 25px;
+
+    background: #f7f4ee;
+    color: #39483c;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    padding: 80px 20px;
+
+    background: #202a22;
+    color: white;
+
+    text-align: center;
+}
+
+footer h2 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ------------------------------
+   MOBILE
+------------------------------ */
+
+@media (max-width: 750px) {
+
+    .navbar {
+        height: 65px;
+
+        padding: 0 5%;
+    }
+
+    .nav-links a:not(.rsvp-nav) {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .section {
+        padding: 80px 7%;
+    }
+
+    .story-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .photo-placeholder {
+        height: 400px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-item {
+        grid-template-columns: 100px 1fr;
+    }
+
+}
