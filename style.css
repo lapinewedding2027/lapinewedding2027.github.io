@@ -603,7 +603,9 @@ footer p {
     letter-spacing: 1px;
 }
 
-
+#fund .button {
+    margin-top: 35px;
+}
 /* ==============================
    MOBILE
 ============================== */
