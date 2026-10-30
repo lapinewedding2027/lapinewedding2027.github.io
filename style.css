@@ -853,6 +853,28 @@ footer p {
     text-transform: uppercase;
 }
 
+
+.travel-second {
+    margin-top: 18px;
+}
+
+.travel-note {
+    max-width: 650px;
+
+    margin: 35px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid var(--taupe);
+
+    color: var(--espresso);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    font-style: italic;
+}
 /* ==============================
    MOBILE
 ============================== */
