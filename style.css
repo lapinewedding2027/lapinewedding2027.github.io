@@ -652,34 +652,31 @@ footer p {
 
 .botanical-stem {
     fill: none;
-
-    stroke: #d9ddcf;
-
-    stroke-width: 2;
+    stroke: #cfd5c8;
+    stroke-width: 2.2;
+    stroke-linecap: round;
 }
 
 .botanical-leaf {
-    fill: #A7B59F;
+    fill: #8f9e8a;
 }
 
 
 /* Upper left branch */
 
 .botanical-top-left {
-    top: 95px;
-    left: 1.5%;
-
-    transform: rotate(-8deg);
+    top: 92px;
+    left: 2%;
+    transform: rotate(-10deg);
 }
 
 
 /* Lower right branch */
 
 .botanical-bottom-right {
-    bottom: 15px;
-    right: 1.5%;
-
-    transform: rotate(172deg);
+    bottom: 10px;
+    right: 2%;
+    transform: rotate(170deg);
 }
 
 
