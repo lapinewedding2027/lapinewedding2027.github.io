@@ -6,17 +6,23 @@
 ============================== */
 
 :root {
-    --evergreen-dark: #23342b;
-    --evergreen: #35493d;
-    --sage: #98a48e;
+    --evergreen-dark: #22372e;
+    --evergreen: #2F4A3D;
 
-    --cream: #f4f0e7;
-    --paper: #fbf8f2;
+    --espresso: #3E2F28;
 
-    --taupe: #c9c0b3;
-    --brass: #b8a474;
+    --sage: #A7B59F;
 
-    --text-dark: #29332c;
+    --cream: #F7F5EF;
+    --paper: #FCFAF6;
+
+    --taupe: #D5CCBD;
+
+    --terracotta: #C97C59;
+
+    --text-dark: #272722;
+
+    --black: #000000;
     --white: #ffffff;
 }
 
