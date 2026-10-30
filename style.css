@@ -1,6 +1,7 @@
 /* ------------------------------
    BASIC SETTINGS
 ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap');
 
 * {
     margin: 0;
@@ -13,7 +14,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #2d332d;
     background: #f7f4ee;
     line-height: 1.7;
@@ -71,7 +72,7 @@ body {
 ------------------------------ */
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     justify-content: center;
@@ -80,63 +81,75 @@ body {
     position: relative;
 
     background:
+        radial-gradient(circle at 20% 20%,
+            rgba(255, 255, 255, 0.08),
+            transparent 35%),
+        radial-gradient(circle at 80% 80%,
+            rgba(255, 255, 255, 0.05),
+            transparent 35%),
         linear-gradient(
-            rgba(24, 35, 27, .30),
-            rgba(24, 35, 27, .45)
-        ),
-        url("images/hero.jpg");
-
-    background-size: cover;
-    background-position: center;
+            145deg,
+            #26372c,
+            #3d5143 55%,
+            #28392f
+        );
 
     text-align: center;
     color: white;
+
+    padding: 110px 20px 70px;
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
+    max-width: 900px;
 }
 
 .small-heading {
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .hero h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Cormorant Garamond", serif;
 
-    font-weight: normal;
-    font-size: clamp(60px, 10vw, 125px);
+    font-weight: 400;
+    font-size: clamp(70px, 11vw, 140px);
 
-    line-height: .9;
+    line-height: .78;
+    letter-spacing: -2px;
+
+    margin: 20px 0;
 }
 
 .hero h1 span {
     display: block;
 
     font-style: italic;
-    font-size: .65em;
+    font-size: .45em;
 
-    margin: 10px 0;
+    margin: 22px 0;
 }
 
 .wedding-date {
-    margin-top: 35px;
+    margin-top: 40px;
 
-    font-size: 17px;
+    font-size: 13px;
     letter-spacing: 4px;
 
     text-transform: uppercase;
 }
 
 .wedding-location {
-    margin: 7px 0 30px;
+    margin: 10px 0 35px;
 
-    font-family: Georgia, serif;
+    font-family: "Cormorant Garamond", serif;
     font-style: italic;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
