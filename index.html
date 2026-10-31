@@ -322,9 +322,7 @@
 </section>
 
     
-<!-- =========================
-     TRAVEL
-========================= -->
+
 
 <!-- =========================
      TRAVEL
@@ -520,8 +518,7 @@
      RSVP
 ========================= -->
 
-<section id="rsvp"
-         class="section rsvp-section">
+<section id="rsvp" class="section rsvp-section">
 
     <p class="section-small-title">
         WE HOPE YOU CAN JOIN US
@@ -531,18 +528,174 @@
         RSVP
     </h2>
 
-    <p>
-        Online RSVP will open here soon.
+    <p class="rsvp-intro">
+        Please let us know whether you'll be celebrating with us.
+        If you're attending, be sure to include the name of each guest
+        in your party.
     </p>
 
 
-    <button class="button">
-        RSVP Coming Soon
-    </button>
+    <form
+        id="rsvp-form"
+        class="rsvp-form"
+        action="https://formspree.io/f/xzeeakob"
+        method="POST"
+    >
+
+
+        <!-- PERSON SUBMITTING RSVP -->
+
+        <div class="form-group">
+
+            <label for="respondent-name">
+                Your Name
+            </label>
+
+            <input
+                type="text"
+                id="respondent-name"
+                name="RSVP submitted by"
+                placeholder="First and last name"
+                required
+            >
+
+        </div>
+
+
+        <!-- ATTENDING? -->
+
+        <div class="form-group">
+
+            <fieldset>
+
+                <legend>
+                    Will you be joining us?
+                </legend>
+
+
+                <div class="radio-options">
+
+                    <label class="radio-choice">
+
+                        <input
+                            type="radio"
+                            name="Attending"
+                            value="Yes"
+                            required
+                        >
+
+                        <span>
+                            Absolutely, we'll be there!
+                        </span>
+
+                    </label>
+
+
+                    <label class="radio-choice">
+
+                        <input
+                            type="radio"
+                            name="Attending"
+                            value="No"
+                        >
+
+                        <span>
+                            Unfortunately, we can't make it.
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+        </div>
+
+
+        <!-- ATTENDEE NAMES -->
+
+        <div
+            id="attendee-section"
+            class="attendee-section"
+        >
+
+            <div class="form-group">
+
+                <label>
+                    Who will be attending?
+                </label>
+
+                <p class="form-help">
+                    Please enter each attendee individually.
+                </p>
+
+
+                <div id="attendee-fields">
+
+                    <div class="attendee-row">
+
+                        <input
+                            type="text"
+                            class="attendee-input"
+                            name="Attendee 1"
+                            placeholder="Attendee 1 — First and last name"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="add-attendee"
+                    class="add-attendee"
+                >
+                    + Add Another Attendee
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- NOTES -->
+
+        <div class="form-group">
+
+            <label for="rsvp-notes">
+                Anything else you'd like us to know?
+            </label>
+
+            <textarea
+                id="rsvp-notes"
+                name="Notes"
+                rows="4"
+                placeholder="Optional"
+            ></textarea>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <button
+            type="submit"
+            class="button rsvp-submit"
+        >
+            Submit RSVP
+        </button>
+
+
+        <p
+            id="rsvp-status"
+            class="rsvp-status"
+            aria-live="polite"
+        ></p>
+
+    </form>
 
 </section>
-
-
 
 <!-- =========================
      FOOTER
