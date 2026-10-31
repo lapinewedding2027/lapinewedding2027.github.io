@@ -749,6 +749,248 @@ footer p {
 
     font-style: italic;
 }
+
+/* ==============================
+   RSVP FORM
+============================== */
+
+.rsvp-intro {
+    max-width: 650px;
+    margin: 0 auto 45px;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 14px;
+}
+
+
+.rsvp-form {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+
+.form-group label,
+.form-group legend {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--white);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 23px;
+    font-weight: 500;
+}
+
+
+.form-group fieldset {
+    border: none;
+}
+
+
+.form-help {
+    margin-top: -7px;
+    margin-bottom: 17px;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: 11px;
+
+    letter-spacing: .5px;
+}
+
+
+.rsvp-form input[type="text"],
+.rsvp-form input[type="email"],
+.rsvp-form textarea {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid rgba(255,255,255,.4);
+
+    border-radius: 0;
+
+    outline: none;
+
+    background: rgba(255,255,255,.08);
+
+    color: white;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 14px;
+
+    transition: .2s ease;
+}
+
+
+.rsvp-form input::placeholder,
+.rsvp-form textarea::placeholder {
+    color: rgba(255,255,255,.5);
+}
+
+
+.rsvp-form input:focus,
+.rsvp-form textarea:focus {
+    border-color: white;
+
+    background: rgba(255,255,255,.12);
+}
+
+
+/* YES / NO OPTIONS */
+
+.radio-options {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-top: 15px;
+}
+
+
+.radio-choice {
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 75px;
+
+    margin: 0 !important;
+
+    padding: 17px 20px;
+
+    border: 1px solid rgba(255,255,255,.35);
+
+    cursor: pointer;
+
+    transition: .2s ease;
+
+    font-family: "Montserrat", sans-serif !important;
+
+    font-size: 12px !important;
+
+    line-height: 1.5;
+}
+
+
+.radio-choice:hover {
+    border-color: white;
+
+    background: rgba(255,255,255,.07);
+}
+
+
+.radio-choice input {
+    accent-color: var(--terracotta);
+
+    flex-shrink: 0;
+}
+
+
+/* ATTENDEES */
+
+.attendee-section {
+    display: none;
+}
+
+
+.attendee-section.visible {
+    display: block;
+}
+
+
+.attendee-row {
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+}
+
+
+.remove-attendee {
+    padding: 0 14px;
+
+    border: 1px solid rgba(255,255,255,.35);
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.add-attendee {
+    margin-top: 6px;
+
+    padding: 10px 0;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(255,255,255,.6);
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.rsvp-submit {
+    margin-top: 10px;
+}
+
+
+.rsvp-status {
+    min-height: 28px;
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 21px;
+}
+
+
 /* ==============================
    MOBILE
 ============================== */
@@ -809,6 +1051,18 @@ footer p {
 
     .menu-card {
         padding: 45px 25px;
+    }
+
+        .radio-options {
+        grid-template-columns: 1fr;
+    }
+
+    .attendee-row {
+        grid-template-columns: 1fr;
+    }
+
+    .remove-attendee {
+        padding: 10px;
     }
 
 }
